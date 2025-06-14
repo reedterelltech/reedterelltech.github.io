@@ -1,9 +1,9 @@
-<html lang="en">
-  <head>
+<html lang="en"><head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Terell Reed • Cybersecurity & Developer &amp; Creative</title>
     <meta name="google-site-verification" content="oXdPwHoBmYbQHOvmCM9EVcBvHIRru2cv9CjTvhgT91s" />
-    <title>Terell Reed | Cybersecurity & Developer</title>
+
     <meta name="description" content="The official site of Terell Reed — cybersecurity intern, AI researcher, and Morgan State University graduate.">
     <link rel="icon" type="image/png" href="android-chrome-512x512.png">
 
@@ -28,8 +28,6 @@
     }
     </script>
   </head>
-
-    
     <!-- Font imports -->
     <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@300;400;500;600;700&amp;family=Inter:wght@300;400;500;700;900&amp;family=Syne:wght@400;500;600;700;800&amp;display=swap" rel="stylesheet">
     
@@ -1415,6 +1413,111 @@
             transform: translateX(5px);
         }
 
+        /* Media Section */
+        .media-container {
+            background: var(--card-bg);
+            border: 1px solid var(--card-border);
+            border-radius: 8px;
+            padding: 3rem;
+            backdrop-filter: blur(5px);
+            transition: transform var(--transition-medium), box-shadow var(--transition-medium);
+            position: relative;
+            overflow: hidden;
+        }
+
+        .media-container:hover {
+            transform: translateY(-10px);
+            border-color: var(--accent-2);
+            box-shadow: var(--glow-2);
+        }
+
+        .media-content {
+            display: grid;
+            grid-template-columns: 1fr 300px;
+            gap: 2rem;
+            align-items: center;
+        }
+
+        .media-text {
+            display: flex;
+            flex-direction: column;
+            gap: 1rem;
+        }
+
+        .media-tag {
+            display: inline-block;
+            background: rgba(76, 201, 240, 0.1);
+            color: var(--accent-2);
+            font-size: 0.8rem;
+            padding: 0.25rem 0.75rem;
+            border-radius: 4px;
+            margin-bottom: 0.75rem;
+            text-transform: uppercase;
+            letter-spacing: 1px;
+            font-weight: 600;
+        }
+
+        .media-title {
+            font-size: 2rem;
+            margin-bottom: 1rem;
+        }
+
+        .media-description {
+            color: var(--text-dim);
+            font-size: 1.1rem;
+            line-height: 1.8;
+            margin-bottom: 1.5rem;
+        }
+
+        .media-quote {
+            background: rgba(76, 201, 240, 0.05);
+            border-left: 3px solid var(--accent-2);
+            padding: 1rem;
+            border-radius: 0 4px 4px 0;
+            font-style: italic;
+            color: var(--text-dim);
+            margin-bottom: 1.5rem;
+        }
+
+        .media-quote:before {
+            content: '"';
+            font-size: 2rem;
+            color: var(--accent-2);
+            margin-right: 0.5rem;
+        }
+
+        .media-link {
+            color: var(--accent-2);
+            font-weight: 500;
+            display: inline-flex;
+            align-items: center;
+            gap: 0.5rem;
+            transition: color var(--transition-fast);
+        }
+
+        .media-link:hover {
+            color: var(--accent-3);
+        }
+
+        .media-link i {
+            transition: transform var(--transition-fast);
+        }
+
+        .media-link:hover i {
+            transform: translateX(5px);
+        }
+
+        .media-image {
+            width: 100%;
+            border-radius: 8px;
+            box-shadow: var(--shadow-1);
+            transition: transform var(--transition-medium);
+        }
+
+        .media-container:hover .media-image {
+            transform: scale(1.05);
+        }
+
         /* Resume Section */
         .resume-container {
             background: var(--card-bg);
@@ -1786,6 +1889,11 @@
             .process-container {
                 padding-left: 3rem;
             }
+            
+            .media-content {
+                grid-template-columns: 1fr;
+                gap: 1.5rem;
+            }
         }
 
         @media (max-width: 768px) {
@@ -1891,11 +1999,11 @@
             transform: translateY(0);
         }
     </style>
-<script src="https://lib.youware.com/youware-lib.1747145198.js" id="yourware-lib"></script></head>
+<script src="https://lib.youware.com/youware-lib.1747145198.js" id="yourware-lib"></script><script src="https://lib.youware.com/youware-lib.1747145198.js" id="yourware-lib"></script></head>
 <body style="">
     <!-- Custom Cursor -->
-    <div class="cursor-dot" style="top: 5px; left: 663px;"></div>
-    <div class="cursor-ring" style="top: 5px; left: 663px;"></div>
+    <div class="cursor-dot" style="top: 66px; left: 991px;"></div>
+    <div class="cursor-ring" style="top: 66px; left: 991px;"></div>
     
     <!-- Loading Screen - will be hidden automatically by JS -->
     <div class="loading-screen hidden">
@@ -1928,10 +2036,11 @@
         
         <ul class="nav-links">
             <li><a href="#about" class="nav-link">About</a></li>
-            <li><a href="#services" class="nav-link">Services</a></li>
             <li><a href="#projects" class="nav-link">Projects</a></li>
             <li><a href="#awards" class="nav-link">Awards</a></li>
             <li><a href="#certifications" class="nav-link">Certifications</a></li>
+            <li><a href="#media" class="nav-link">Media</a></li>
+            <li><a href="#services" class="nav-link">Services</a></li>
             <li><a href="#contact" class="nav-button">Contact</a></li>
         </ul>
     </nav>
@@ -1978,7 +2087,7 @@ class Solution {
                 </h1>
                 <p class="hero-subtitle">
                     <span class="static-text">I create </span>
-                    <span class="typing-text">mobile applicat</span>
+                    <span class="typing-text">custom w</span>
                 </p>
                 <div class="hero-buttons">
                     <a href="#services" class="hero-btn hero-btn-primary">My Services <i class="fas fa-code"></i></a>
@@ -1987,11 +2096,11 @@ class Solution {
             </div>
         </div>
         
-        <div class="hero-3d-container" id="hero-3d"><canvas width="400" height="400" style="display: block; width: 400px; height: 400px;"></canvas></div>
+        <div class="hero-3d-container" id="hero-3d"><canvas width="400" height="400" style="display: block; width: 400px; height: 400px;"></canvas><canvas width="400" height="400" style="display: block; width: 400px; height: 400px;"></canvas></div>
         
         <div class="hero-scatter">
             <!-- Will be populated with JS -->
-        <div class="hero-particle" style="width: 5.63016px; height: 5.63016px; top: 57.7958%; left: 80.7462%; animation-delay: 0.46182s;"></div><div class="hero-particle" style="width: 3.51469px; height: 3.51469px; top: 55.4291%; left: 78.4175%; animation-delay: 0.628488s;"></div><div class="hero-particle" style="width: 1.47852px; height: 1.47852px; top: 85.3034%; left: 17.8501%; animation-delay: 3.97817s;"></div><div class="hero-particle" style="width: 1.37747px; height: 1.37747px; top: 42.3562%; left: 87.89%; animation-delay: 2.36667s;"></div><div class="hero-particle" style="width: 2.58064px; height: 2.58064px; top: 22.4961%; left: 7.36209%; animation-delay: 2.57113s;"></div><div class="hero-particle" style="width: 2.57236px; height: 2.57236px; top: 26.2585%; left: 28.2677%; animation-delay: 0.0836144s;"></div><div class="hero-particle" style="width: 4.11893px; height: 4.11893px; top: 1.56162%; left: 24.458%; animation-delay: 1.08818s;"></div><div class="hero-particle" style="width: 1.06274px; height: 1.06274px; top: 57.5891%; left: 49.6188%; animation-delay: 0.278831s;"></div><div class="hero-particle" style="width: 1.81846px; height: 1.81846px; top: 90.5973%; left: 38.0351%; animation-delay: 0.729172s;"></div><div class="hero-particle" style="width: 3.93405px; height: 3.93405px; top: 27.0731%; left: 69.2863%; animation-delay: 1.2755s;"></div><div class="hero-particle" style="width: 1.51449px; height: 1.51449px; top: 90.6696%; left: 91.2203%; animation-delay: 3.4166s;"></div><div class="hero-particle" style="width: 2.17936px; height: 2.17936px; top: 13.3093%; left: 11.1014%; animation-delay: 2.3109s;"></div><div class="hero-particle" style="width: 1.38423px; height: 1.38423px; top: 80.7524%; left: 29.7014%; animation-delay: 3.16283s;"></div><div class="hero-particle" style="width: 1.94191px; height: 1.94191px; top: 10.8972%; left: 96.2018%; animation-delay: 3.56726s;"></div><div class="hero-particle" style="width: 4.92932px; height: 4.92932px; top: 83.0052%; left: 73.2717%; animation-delay: 0.257782s;"></div></div>
+        <div class="hero-particle" style="width: 5.63016px; height: 5.63016px; top: 57.7958%; left: 80.7462%; animation-delay: 0.46182s;"></div><div class="hero-particle" style="width: 3.51469px; height: 3.51469px; top: 55.4291%; left: 78.4175%; animation-delay: 0.628488s;"></div><div class="hero-particle" style="width: 1.47852px; height: 1.47852px; top: 85.3034%; left: 17.8501%; animation-delay: 3.97817s;"></div><div class="hero-particle" style="width: 1.37747px; height: 1.37747px; top: 42.3562%; left: 87.89%; animation-delay: 2.36667s;"></div><div class="hero-particle" style="width: 2.58064px; height: 2.58064px; top: 22.4961%; left: 7.36209%; animation-delay: 2.57113s;"></div><div class="hero-particle" style="width: 2.57236px; height: 2.57236px; top: 26.2585%; left: 28.2677%; animation-delay: 0.0836144s;"></div><div class="hero-particle" style="width: 4.11893px; height: 4.11893px; top: 1.56162%; left: 24.458%; animation-delay: 1.08818s;"></div><div class="hero-particle" style="width: 1.06274px; height: 1.06274px; top: 57.5891%; left: 49.6188%; animation-delay: 0.278831s;"></div><div class="hero-particle" style="width: 1.81846px; height: 1.81846px; top: 90.5973%; left: 38.0351%; animation-delay: 0.729172s;"></div><div class="hero-particle" style="width: 3.93405px; height: 3.93405px; top: 27.0731%; left: 69.2863%; animation-delay: 1.2755s;"></div><div class="hero-particle" style="width: 1.51449px; height: 1.51449px; top: 90.6696%; left: 91.2203%; animation-delay: 3.4166s;"></div><div class="hero-particle" style="width: 2.17936px; height: 2.17936px; top: 13.3093%; left: 11.1014%; animation-delay: 2.3109s;"></div><div class="hero-particle" style="width: 1.38423px; height: 1.38423px; top: 80.7524%; left: 29.7014%; animation-delay: 3.16283s;"></div><div class="hero-particle" style="width: 1.94191px; height: 1.94191px; top: 10.8972%; left: 96.2018%; animation-delay: 3.56726s;"></div><div class="hero-particle" style="width: 4.92932px; height: 4.92932px; top: 83.0052%; left: 73.2717%; animation-delay: 0.257782s;"></div><div class="hero-particle" style="width: 4.64293px; height: 4.64293px; top: 49.122%; left: 4.45956%; animation-delay: 3.90211s;"></div><div class="hero-particle" style="width: 4.46554px; height: 4.46554px; top: 32.1225%; left: 74.6361%; animation-delay: 2.54144s;"></div><div class="hero-particle" style="width: 3.53801px; height: 3.53801px; top: 70.6171%; left: 53.7678%; animation-delay: 1.5605s;"></div><div class="hero-particle" style="width: 2.00872px; height: 2.00872px; top: 13.3401%; left: 72.6622%; animation-delay: 1.85453s;"></div><div class="hero-particle" style="width: 4.66921px; height: 4.66921px; top: 56.4198%; left: 43.9845%; animation-delay: 1.47598s;"></div><div class="hero-particle" style="width: 3.12817px; height: 3.12817px; top: 84.0778%; left: 29.4161%; animation-delay: 0.180531s;"></div><div class="hero-particle" style="width: 3.82372px; height: 3.82372px; top: 39.8024%; left: 88.5562%; animation-delay: 3.79108s;"></div><div class="hero-particle" style="width: 5.05546px; height: 5.05546px; top: 81.4441%; left: 36.0432%; animation-delay: 1.36652s;"></div><div class="hero-particle" style="width: 2.41218px; height: 2.41218px; top: 11.5276%; left: 54.3737%; animation-delay: 2.44004s;"></div><div class="hero-particle" style="width: 5.17879px; height: 5.17879px; top: 7.8655%; left: 82.1114%; animation-delay: 0.0834092s;"></div><div class="hero-particle" style="width: 1.84233px; height: 1.84233px; top: 16.1082%; left: 28.0615%; animation-delay: 2.40049s;"></div><div class="hero-particle" style="width: 5.73746px; height: 5.73746px; top: 97.3468%; left: 46.1088%; animation-delay: 3.30411s;"></div><div class="hero-particle" style="width: 1.57562px; height: 1.57562px; top: 30.931%; left: 3.43438%; animation-delay: 2.46021s;"></div><div class="hero-particle" style="width: 2.0236px; height: 2.0236px; top: 23.5753%; left: 99.0429%; animation-delay: 1.70112s;"></div><div class="hero-particle" style="width: 5.24687px; height: 5.24687px; top: 97.5594%; left: 32.1957%; animation-delay: 3.13266s;"></div></div>
         
         <a href="#about" class="hero-scroll">
             <span class="hero-scroll-text">Scroll Down</span>
@@ -2039,7 +2148,371 @@ class Solution {
         </div>
     </section>
     
-    <!-- Services Section - New section -->
+    <!-- Projects Section -->
+    <section class="section" id="projects">
+        <div class="container">
+            <h2 class="section-title fade-in visible">Projects &amp; Events</h2>
+            
+            <div class="projects-container">
+                <div class="project-card fade-in visible">
+                    <div class="project-content">
+                        <span class="project-tag">Conference</span>
+                        <h3 class="project-title">Dragos, Inc. &amp; SANS Institute ICS Summit 2024</h3>
+                        <p class="project-description">
+                            Participated in the leading cybersecurity conference focused on industrial control systems and security.
+                        </p>
+                        <div class="project-details">
+                            <span>2024</span>
+                            <span>Orlando, FL</span>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="project-card fade-in visible">
+                    <div class="project-content">
+                        <span class="project-tag">Conference</span>
+                        <h3 class="project-title">Tapia/ Stars Conference</h3>
+                        <p class="project-description">
+                            Engaged with leaders in computing diversity at this premier event celebrating diversity in computing.
+                        </p>
+                        <div class="project-details">
+                            <span>2023</span>
+                            <span>Dallas, TX</span>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="project-card fade-in visible">
+                    <div class="project-content">
+                        <span class="project-tag">Research</span>
+                        <h3 class="project-title">Annual Research Symposium</h3>
+                        <p class="project-description">
+                            Presented cutting-edge research findings at the prestigious annual symposium for emerging technologies.
+                        </p>
+                        <div class="project-details">
+                            <span>2022-2023</span>
+                            <span>Baltimore, MD</span>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="project-card fade-in visible">
+                    <div class="project-content">
+                        <span class="project-tag">News</span>
+                        <h3 class="project-title">Morgan State University Students Win Hackathon</h3>
+                        <p class="project-description">
+                            Led a team to victory with innovative solutions at a competitive tech hackathon.
+                        </p>
+                        <div class="project-details">
+                            <span>2023</span>
+                            <span>MSU News</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    
+    <!-- Awards Section -->
+    <section class="section" id="awards">
+        <div class="container">
+            <h2 class="section-title fade-in visible">Awards &amp; Recognition</h2>
+            
+            <div class="awards-container">
+                <div class="award-card fade-in visible">
+                    <div class="award-icon-container">
+                        <div class="award-icon">
+                            <i class="fas fa-trophy"></i>
+                        </div>
+                    </div>
+                    <h3 class="award-title">Best Technical Solution</h3>
+                    <p class="award-description">Recognized for developing the most innovative technical solution at the American Airlines Black Enterprise Hackathon.</p>
+                    <span class="award-date">2023</span>
+                </div>
+                
+                <div class="award-card fade-in visible">
+                    <div class="award-icon-container">
+                        <div class="award-icon">
+                            <i class="fas fa-medal"></i>
+                        </div>
+                    </div>
+                    <h3 class="award-title">3rd Place Winner</h3>
+                    <p class="award-description">Awarded third place for outstanding project development and presentation at the MorganHacks Hackathon.</p>
+                    <span class="award-date">2023</span>
+                </div>
+                
+                <div class="award-card fade-in visible">
+                    <div class="award-icon-container">
+                        <div class="award-icon">
+                            <i class="fas fa-award"></i>
+                        </div>
+                    </div>
+                    <h3 class="award-title">2nd Place Winner</h3>
+                    <p class="award-description">Secured second place with innovative solutions and strong technical implementation at the CodeLinc Hackathon.</p>
+                    <span class="award-date">2022</span>
+                </div>
+                
+                <div class="award-card fade-in visible">
+                    <div class="award-icon-container">
+                        <div class="award-icon">
+                            <i class="fas fa-star"></i>
+                        </div>
+                    </div>
+                    <h3 class="award-title">2nd Place Winner</h3>
+                    <p class="award-description">Recognized for demonstrating excellence in problem-solving and technical execution at the Gener8tor Hackathon.</p>
+                    <span class="award-date">2022</span>
+                </div>
+                
+                <div class="award-card fade-in visible">
+                    <div class="award-icon-container">
+                        <div class="award-icon">
+                            <i class="fas fa-graduation-cap"></i>
+                        </div>
+                    </div>
+                    <h3 class="award-title">Troy E Quinn Grant</h3>
+                    <p class="award-description">Awarded by Clara I Adams Honors College in recognition of academic excellence and leadership potential.</p>
+                    <span class="award-date">2023</span>
+                </div>
+                
+                <div class="award-card fade-in visible">
+                    <div class="award-icon-container">
+                        <div class="award-icon">
+                            <i class="fas fa-laptop-code"></i>
+                        </div>
+                    </div>
+                    <h3 class="award-title">CMD-IT/ACM Richard Tapia Conference</h3>
+                    <p class="award-description">Received scholarship to attend this prestigious conference celebrating diversity in computing, where I presented my poster 'SocialSphere'.</p>
+                    <span class="award-date">2023</span>
+                </div>
+                
+                <div class="award-card fade-in visible">
+                    <div class="award-icon-container">
+                        <div class="award-icon">
+                            <i class="fas fa-hands-helping"></i>
+                        </div>
+                    </div>
+                    <h3 class="award-title">Morgan State University Foundation</h3>
+                    <p class="award-description">Awarded scholarship by MSUF in recognition of academic achievement and contributions to the university community.</p>
+                    <span class="award-date">2022</span>
+                </div>
+                
+                <div class="award-card fade-in visible">
+                    <div class="award-icon-container">
+                        <div class="award-icon">
+                            <i class="fas fa-shield-alt"></i>
+                        </div>
+                    </div>
+                    <h3 class="award-title">SANS/DRAGOS Diversity Scholarship</h3>
+                    <p class="award-description">Selected as one of 12 recipients to attend the SANS Institute Industrial Control System (ICS) Cyber Security Summit in Orlando, FL.</p>
+                    <span class="award-date">2024</span>
+                </div>
+            </div>
+        </div>
+    </section>
+    
+    <!-- Media Section -->
+    <section class="section" id="media" style="background: #080d1f; padding-top: 3rem; padding-bottom: 3rem;">
+        <div class="container">
+            <h2 class="section-title fade-in visible" style="font-size: 2.5rem; margin-bottom: 1.5rem; color: #ffffff;">Featured in Baltimore Times</h2>
+            
+            <div class="media-feature fade-in visible">
+                <div style="display: flex; flex-wrap: wrap; align-items: center; gap: 2rem;">
+                    <div style="flex: 1; min-width: 300px;">
+                        <div style="font-size: 1.5rem; margin-bottom: 1rem; color: var(--accent-3);">
+                            <i class="fas fa-newspaper" style="margin-right: 0.5rem;"></i>
+                            Media Coverage
+                        </div>
+                        <h3 style="font-size: 1.3rem; margin-bottom: 1rem; color: #ffffff;">Morgan State University students take home prize money, land internships after hackathon</h3>
+                        <p style="font-size: 1rem; color: #cccccc; margin-bottom: 1.5rem; line-height: 1.6;">
+                            I'm excited to have been featured in the Baltimore Times for our success at Morgan State University's first Hackathon. Our team's app "RiseAbove" earned recognition and opened exciting opportunities.
+                        </p>
+                        <a href="https://baltimoretimes-online.com/latest-news/2023/04/28/morgan-state-university-students-take-home-prize-money-land-internships-after-hackathon/" target="_blank" class="hero-btn hero-btn-primary" style="display: inline-flex; align-items: center; gap: 0.5rem; font-size: 0.9rem; padding: 0.75rem 1.5rem;">
+                            Read Full Article <i class="fas fa-external-link-alt"></i>
+                        </a>
+                    </div>
+                    <div style="flex: 1; min-width: 300px; background-color: #0c1022; padding: 0.75rem; border-radius: 8px; border: 1px solid #1a2040;">
+                        <div style="position: relative; overflow: hidden; border-radius: 8px; box-shadow: var(--shadow-1);">
+                            <img src="https://i.ibb.co/8FCphHq/Screenshot-2025-06-06-at-7-58-34-PM.png" alt="Morgan State University Hackathon Winners" style="width: 100%; height: auto;">
+                        </div>
+                        <div style="padding: 0.75rem; text-align: center; font-style: italic; color: #999999; font-size: 0.9rem;">
+                            Morgan State University Students at Hackathon Event
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    
+    <!-- Certifications Section -->
+    <section class="section" id="certifications">
+        <div class="container">
+            <h2 class="section-title fade-in visible">Professional Certifications</h2>
+            
+            <div class="certs-container">
+                <div class="cert-card fade-in visible">
+                    <div class="cert-icon-container">
+                        <div class="cert-icon">
+                            <i class="fas fa-shield-alt"></i>
+                        </div>
+                    </div>
+                    <h3 class="cert-title">CompTIA Security +</h3>
+                    <p class="cert-description">Validates core cybersecurity skills with emphasis on hands-on practical security knowledge.</p>
+                    <div class="cert-footer">
+                        <span class="cert-date">Issued June 2022</span>
+                        <a href="https://www.credly.com/users/terell-reed.cce0e7bf" target="_blank" class="cert-link">Verify <i class="fas fa-arrow-right"></i></a>
+                    </div>
+                </div>
+                
+                <div class="cert-card fade-in visible">
+                    <div class="cert-icon-container">
+                        <div class="cert-icon">
+                            <i class="fas fa-network-wired"></i>
+                        </div>
+                    </div>
+                    <h3 class="cert-title">Cisco CCT</h3>
+                    <p class="cert-description">Validates skills to diagnose, restore, repair, and replace critical Cisco networking and system devices at customer sites.</p>
+                    <div class="cert-footer">
+                        <span class="cert-date">Issued June 2021</span>
+                        <a href="https://www.credly.com/users/terell-reed.cce0e7bf" target="_blank" class="cert-link">Verify <i class="fas fa-arrow-right"></i></a>
+                    </div>
+                </div>
+                
+                <div class="cert-card fade-in visible">
+                    <div class="cert-icon-container">
+                        <div class="cert-icon">
+                            <i class="fas fa-server"></i>
+                        </div>
+                    </div>
+                    <h3 class="cert-title">Cisco CCNA</h3>
+                    <p class="cert-description">Validates a broad range of fundamentals - from networking technologies, to security, to software development.</p>
+                    <div class="cert-footer">
+                        <span class="cert-date">Issued Oct 2024</span>
+                        <a href="https://www.credly.com/users/terell-reed.cce0e7bf" target="_blank" class="cert-link">Verify <i class="fas fa-arrow-right"></i></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    
+    <!-- Media Section -->
+    <section class="section" id="media">
+        <div class="container">
+            <h2 class="section-title fade-in visible">Featured In Media</h2>
+            
+            <div class="media-container fade-in visible">
+                <div class="media-content">
+                    <div class="media-text">
+                        <span class="media-tag">Featured Article</span>
+                        <h3 class="media-title">MITRE Insights: Our Culture in Action</h3>
+                        <p class="media-description">
+                            Featured in MITRE's October edition highlighting the impact of their Cyber Futures internship program. 
+                            The article showcases how 32 interns, including myself, contributed significantly to cybersecurity research 
+                            while gaining hands-on experience in Zero Trust security, forensic examination, and cryptocurrency analysis.
+                        </p>
+                        <div class="media-quote">
+                            Zero trust security. Forensic examination. Cryptocurrency analysis. Our 32 Cyber Futures interns didn't spend their summer in receive mode: they gave as much as they got.
+                        </div>
+                        <a href="https://www.mitre.org/news-insights/mitre-360/mitre-360-october" target="_blank" class="media-link">
+                            Read Full Article <i class="fas fa-external-link-alt"></i>
+                        </a>
+                    </div>
+                    <div class="media-image-container">
+                        <img src="https://public.youware.com/users-website-assets/prod/3025c7bd-d075-47c3-9f61-469ef41bfc4e/Screenshot-2025-06-14-at-12-23-03-AM.png" alt="Terell Reed featured in MITRE Insights" class="media-image">
+                    </div>
+                </div>
+            </div>
+            
+            <div class="media-container fade-in visible" style="margin-top: 2rem;">
+                <div class="media-content">
+                    <div class="media-text">
+                        <span class="media-tag">Professional Experience</span>
+                        <h3 class="media-title">Dragos Cybersecurity Intern</h3>
+                        <p class="media-description">
+                            Working as a cybersecurity intern at Dragos, a leading industrial cybersecurity company focused on protecting critical infrastructure. 
+                            Contributing to cutting-edge security solutions that defend industrial control systems and operational technology environments from cyber threats.
+                        </p>
+                        <div class="media-quote">
+                            Gaining hands-on experience with industrial cybersecurity technologies and threat intelligence while working alongside industry experts.
+                        </div>
+                    </div>
+                    <div class="media-image-container">
+                        <img src="https://public.youware.com/users-website-assets/prod/3025c7bd-d075-47c3-9f61-469ef41bfc4e/1718769415629" alt="Terell Reed at Dragos" class="media-image">
+                    </div>
+                </div>
+            </div>
+            
+            <div class="media-container fade-in visible" style="margin-top: 2rem;">
+                <div class="media-content">
+                    <div class="media-text">
+                        <span class="media-tag">Academic Achievement</span>
+                        <h3 class="media-title">Annual Research Symposium</h3>
+                        <p class="media-description">
+                            Presented innovative research at the Annual Research Symposium, showcasing projects focused on advanced cybersecurity solutions and technological innovations.
+                            The event provided an opportunity to exchange ideas with peers and faculty while demonstrating technical expertise and presentation skills.
+                        </p>
+                        <div class="media-quote">
+                            Collaborating with fellow researchers to address real-world challenges through applied technology and innovative thinking.
+                        </div>
+                    </div>
+                    <div class="media-image-container">
+                        <img src="https://public.youware.com/users-website-assets/prod/3025c7bd-d075-47c3-9f61-469ef41bfc4e/1715926154532" alt="Terell Reed at Annual Research Symposium" class="media-image">
+                    </div>
+                </div>
+            </div>
+            
+            <div class="media-container fade-in visible" style="margin-top: 2rem;">
+                <div class="media-content">
+                    <div class="media-text">
+                        <span class="media-tag">Published Research</span>
+                        <h3 class="media-title">LithoReality: Augmented Reality Integration for Immersive Semiconductor Education</h3>
+                        <p class="media-description">
+                            Published research paper introducing LithoReality, an innovative AR application that revolutionizes semiconductor education. 
+                            The project seamlessly integrates Unity, Vuforia, AI, Arduino, and keypad interfaces to simulate complex spin coater processes, 
+                            bridging theoretical knowledge with practical application in semiconductor fabrication.
+                        </p>
+                        <div class="media-quote">
+                            "LithoReality represents a pioneering step in merging Augmented Reality (AR), Artificial Intelligence (AI), and tangible interactions to transform semiconductor education."
+                        </div>
+                        <a href="https://public.youware.com/users-website-assets/prod/3025c7bd-d075-47c3-9f61-469ef41bfc4e/FINAL%20REPORT.pdf" target="_blank" class="media-link">
+                            Read Full Paper <i class="fas fa-file-pdf"></i>
+                        </a>
+                    </div>
+                    <div class="media-image-container" style="display: flex; align-items: center; justify-content: center; background: linear-gradient(135deg, rgba(58, 86, 224, 0.1), rgba(76, 201, 240, 0.1)); border-radius: 8px; padding: 2rem;">
+                        <div style="text-align: center; color: var(--text-light);">
+                            <i class="fas fa-file-pdf" style="font-size: 4rem; color: var(--accent-2); margin-bottom: 1rem;"></i>
+                            <h4 style="margin-bottom: 0.5rem; font-size: 1.2rem;">Research Paper</h4>
+                            <p style="color: var(--text-dim); font-size: 0.9rem;">LithoReality AR Application</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    
+    <!-- Resume Section -->
+    <section class="section" id="resume">
+        <div class="container">
+            <h2 class="section-title fade-in visible">My Resume</h2>
+            
+            <div class="resume-container fade-in visible">
+                <div class="resume-icon">
+                    <i class="fas fa-file-alt"></i>
+                </div>
+                <h3 class="resume-title">Download My Resume</h3>
+                <p class="resume-text">Download my latest resume to learn more about my professional experience, education, skills, and qualifications.</p>
+                <div class="resume-buttons">
+                    <a href="https://drive.google.com/file/d/1OpwkRNLuljDMR0HDscgIFxc6YQ93A51l/view?usp=drive_link" download="" class="resume-btn resume-btn-primary">
+                        <i class="fas fa-download"></i> Download PDF
+                    </a>
+                    <a href="https://drive.google.com/file/d/1OpwkRNLuljDMR0HDscgIFxc6YQ93A51l/view?usp=drive_link" target="_blank" class="resume-btn resume-btn-secondary">
+                        <i class="fas fa-eye"></i> View Online
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+    
+    <!-- Services Section -->
     <section class="section" id="services">
         <div class="container">
             <h2 class="section-title fade-in visible">My Services</h2>
@@ -2320,275 +2793,6 @@ class Solution {
         </div>
     </section>
     
-    <!-- Projects Section -->
-    <section class="section" id="projects">
-        <div class="container">
-            <h2 class="section-title fade-in visible">Projects &amp; Events</h2>
-            
-            <div class="projects-container">
-                <div class="project-card fade-in visible">
-                    <div class="project-content">
-                        <span class="project-tag">Conference</span>
-                        <h3 class="project-title">Dragos, Inc. &amp; SANS Institute ICS Summit 2024</h3>
-                        <p class="project-description">
-                            Participated in the leading cybersecurity conference focused on industrial control systems and security.
-                        </p>
-                        <div class="project-details">
-                            <span>2024</span>
-                            <span>Orlando, FL</span>
-                        </div>
-                    </div>
-                </div>
-                
-                <div class="project-card fade-in visible">
-                    <div class="project-content">
-                        <span class="project-tag">Conference</span>
-                        <h3 class="project-title">Tapia/ Stars Conference</h3>
-                        <p class="project-description">
-                            Engaged with leaders in computing diversity at this premier event celebrating diversity in computing.
-                        </p>
-                        <div class="project-details">
-                            <span>2023</span>
-                            <span>Dallas, TX</span>
-                        </div>
-                    </div>
-                </div>
-                
-                <div class="project-card fade-in visible">
-                    <div class="project-content">
-                        <span class="project-tag">Research</span>
-                        <h3 class="project-title">Annual Research Symposium</h3>
-                        <p class="project-description">
-                            Presented cutting-edge research findings at the prestigious annual symposium for emerging technologies.
-                        </p>
-                        <div class="project-details">
-                            <span>2022-2023</span>
-                            <span>Baltimore, MD</span>
-                        </div>
-                    </div>
-                </div>
-                
-                <div class="project-card fade-in visible">
-                    <div class="project-content">
-                        <span class="project-tag">News</span>
-                        <h3 class="project-title">Morgan State University Students Win Hackathon</h3>
-                        <p class="project-description">
-                            Led a team to victory with innovative solutions at a competitive tech hackathon.
-                        </p>
-                        <div class="project-details">
-                            <span>2023</span>
-                            <span>MSU News</span>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
-    
-    <!-- Awards Section -->
-    <section class="section" id="awards">
-        <div class="container">
-            <h2 class="section-title fade-in visible">Awards &amp; Recognition</h2>
-            
-            <div class="awards-container">
-                <div class="award-card fade-in visible">
-                    <div class="award-icon-container">
-                        <div class="award-icon">
-                            <i class="fas fa-trophy"></i>
-                        </div>
-                    </div>
-                    <h3 class="award-title">Best Technical Solution</h3>
-                    <p class="award-description">Recognized for developing the most innovative technical solution at the American Airlines Black Enterprise Hackathon.</p>
-                    <span class="award-date">2023</span>
-                </div>
-                
-                <div class="award-card fade-in visible">
-                    <div class="award-icon-container">
-                        <div class="award-icon">
-                            <i class="fas fa-medal"></i>
-                        </div>
-                    </div>
-                    <h3 class="award-title">3rd Place Winner</h3>
-                    <p class="award-description">Awarded third place for outstanding project development and presentation at the MorganHacks Hackathon.</p>
-                    <span class="award-date">2023</span>
-                </div>
-                
-                <div class="award-card fade-in visible">
-                    <div class="award-icon-container">
-                        <div class="award-icon">
-                            <i class="fas fa-award"></i>
-                        </div>
-                    </div>
-                    <h3 class="award-title">2nd Place Winner</h3>
-                    <p class="award-description">Secured second place with innovative solutions and strong technical implementation at the CodeLinc Hackathon.</p>
-                    <span class="award-date">2022</span>
-                </div>
-                
-                <div class="award-card fade-in visible">
-                    <div class="award-icon-container">
-                        <div class="award-icon">
-                            <i class="fas fa-star"></i>
-                        </div>
-                    </div>
-                    <h3 class="award-title">2nd Place Winner</h3>
-                    <p class="award-description">Recognized for demonstrating excellence in problem-solving and technical execution at the Gener8tor Hackathon.</p>
-                    <span class="award-date">2022</span>
-                </div>
-                
-                <div class="award-card fade-in visible">
-                    <div class="award-icon-container">
-                        <div class="award-icon">
-                            <i class="fas fa-graduation-cap"></i>
-                        </div>
-                    </div>
-                    <h3 class="award-title">Troy E Quinn Grant</h3>
-                    <p class="award-description">Awarded by Clara I Adams Honors College in recognition of academic excellence and leadership potential.</p>
-                    <span class="award-date">2023</span>
-                </div>
-                
-                <div class="award-card fade-in visible">
-                    <div class="award-icon-container">
-                        <div class="award-icon">
-                            <i class="fas fa-laptop-code"></i>
-                        </div>
-                    </div>
-                    <h3 class="award-title">CMD-IT/ACM Richard Tapia Conference</h3>
-                    <p class="award-description">Received scholarship to attend this prestigious conference celebrating diversity in computing, where I presented my poster 'SocialSphere'.</p>
-                    <span class="award-date">2023</span>
-                </div>
-                
-                <div class="award-card fade-in visible">
-                    <div class="award-icon-container">
-                        <div class="award-icon">
-                            <i class="fas fa-hands-helping"></i>
-                        </div>
-                    </div>
-                    <h3 class="award-title">Morgan State University Foundation</h3>
-                    <p class="award-description">Awarded scholarship by MSUF in recognition of academic achievement and contributions to the university community.</p>
-                    <span class="award-date">2022</span>
-                </div>
-                
-                <div class="award-card fade-in visible">
-                    <div class="award-icon-container">
-                        <div class="award-icon">
-                            <i class="fas fa-shield-alt"></i>
-                        </div>
-                    </div>
-                    <h3 class="award-title">SANS/DRAGOS Diversity Scholarship</h3>
-                    <p class="award-description">Selected as one of 12 recipients to attend the SANS Institute Industrial Control System (ICS) Cyber Security Summit in Orlando, FL.</p>
-                    <span class="award-date">2024</span>
-                </div>
-            </div>
-        </div>
-    </section>
-    
-    <!-- Media Section -->
-    <section class="section" id="media" style="background: #080d1f; padding-top: 3rem; padding-bottom: 3rem;">
-        <div class="container">
-            <h2 class="section-title fade-in visible" style="font-size: 2.5rem; margin-bottom: 1.5rem; color: #ffffff;">Featured in Baltimore Times</h2>
-            
-            <div class="media-feature fade-in visible">
-                <div style="display: flex; flex-wrap: wrap; align-items: center; gap: 2rem;">
-                    <div style="flex: 1; min-width: 300px;">
-                        <div style="font-size: 1.5rem; margin-bottom: 1rem; color: var(--accent-3);">
-                            <i class="fas fa-newspaper" style="margin-right: 0.5rem;"></i>
-                            Media Coverage
-                        </div>
-                        <h3 style="font-size: 1.3rem; margin-bottom: 1rem; color: #ffffff;">Morgan State University students take home prize money, land internships after hackathon</h3>
-                        <p style="font-size: 1rem; color: #cccccc; margin-bottom: 1.5rem; line-height: 1.6;">
-                            I'm excited to have been featured in the Baltimore Times for our success at Morgan State University's first Hackathon. Our team's app "RiseAbove" earned recognition and opened exciting opportunities.
-                        </p>
-                        <a href="https://baltimoretimes-online.com/latest-news/2023/04/28/morgan-state-university-students-take-home-prize-money-land-internships-after-hackathon/" target="_blank" class="hero-btn hero-btn-primary" style="display: inline-flex; align-items: center; gap: 0.5rem; font-size: 0.9rem; padding: 0.75rem 1.5rem;">
-                            Read Full Article <i class="fas fa-external-link-alt"></i>
-                        </a>
-                    </div>
-                    <div style="flex: 1; min-width: 300px; background-color: #0c1022; padding: 0.75rem; border-radius: 8px; border: 1px solid #1a2040;">
-                        <div style="position: relative; overflow: hidden; border-radius: 8px; box-shadow: var(--shadow-1);">
-                            <img src="https://i.ibb.co/8FCphHq/Screenshot-2025-06-06-at-7-58-34-PM.png" alt="Morgan State University Hackathon Winners" style="width: 100%; height: auto;">
-                        </div>
-                        <div style="padding: 0.75rem; text-align: center; font-style: italic; color: #999999; font-size: 0.9rem;">
-                            Morgan State University Students at Hackathon Event
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
-    
-    <!-- Certifications Section -->
-    <section class="section" id="certifications">
-        <div class="container">
-            <h2 class="section-title fade-in visible">Professional Certifications</h2>
-            
-            <div class="certs-container">
-                <div class="cert-card fade-in visible">
-                    <div class="cert-icon-container">
-                        <div class="cert-icon">
-                            <i class="fas fa-shield-alt"></i>
-                        </div>
-                    </div>
-                    <h3 class="cert-title">CompTIA Security +</h3>
-                    <p class="cert-description">Validates core cybersecurity skills with emphasis on hands-on practical security knowledge.</p>
-                    <div class="cert-footer">
-                        <span class="cert-date">Issued June 2022</span>
-                        <a href="https://www.credly.com/users/terell-reed.cce0e7bf" target="_blank" class="cert-link">Verify <i class="fas fa-arrow-right"></i></a>
-                    </div>
-                </div>
-                
-                <div class="cert-card fade-in visible">
-                    <div class="cert-icon-container">
-                        <div class="cert-icon">
-                            <i class="fas fa-network-wired"></i>
-                        </div>
-                    </div>
-                    <h3 class="cert-title">Cisco CCT</h3>
-                    <p class="cert-description">Validates skills to diagnose, restore, repair, and replace critical Cisco networking and system devices at customer sites.</p>
-                    <div class="cert-footer">
-                        <span class="cert-date">Issued June 2021</span>
-                        <a href="https://www.credly.com/users/terell-reed.cce0e7bf" target="_blank" class="cert-link">Verify <i class="fas fa-arrow-right"></i></a>
-                    </div>
-                </div>
-                
-                <div class="cert-card fade-in visible">
-                    <div class="cert-icon-container">
-                        <div class="cert-icon">
-                            <i class="fas fa-server"></i>
-                        </div>
-                    </div>
-                    <h3 class="cert-title">Cisco CCNA</h3>
-                    <p class="cert-description">Validates a broad range of fundamentals - from networking technologies, to security, to software development.</p>
-                    <div class="cert-footer">
-                        <span class="cert-date">Issued Oct 2024</span>
-                        <a href="https://www.credly.com/users/terell-reed.cce0e7bf" target="_blank" class="cert-link">Verify <i class="fas fa-arrow-right"></i></a>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
-    
-    <!-- Resume Section -->
-    <section class="section" id="resume">
-        <div class="container">
-            <h2 class="section-title fade-in visible">My Resume</h2>
-            
-            <div class="resume-container fade-in visible">
-                <div class="resume-icon">
-                    <i class="fas fa-file-alt"></i>
-                </div>
-                <h3 class="resume-title">Download My Resume</h3>
-                <p class="resume-text">Download my latest resume to learn more about my professional experience, education, skills, and qualifications.</p>
-                <div class="resume-buttons">
-                    <a href="https://drive.google.com/file/d/1OpwkRNLuljDMR0HDscgIFxc6YQ93A51l/view?usp=drive_link" download="" class="resume-btn resume-btn-primary">
-                        <i class="fas fa-download"></i> Download PDF
-                    </a>
-                    <a href="https://drive.google.com/file/d/1OpwkRNLuljDMR0HDscgIFxc6YQ93A51l/view?usp=drive_link" target="_blank" class="resume-btn resume-btn-secondary">
-                        <i class="fas fa-eye"></i> View Online
-                    </a>
-                </div>
-            </div>
-        </div>
-    </section>
-    
     <!-- Contact Section -->
     <section class="section" id="contact">
         <div class="container">
@@ -2692,10 +2896,11 @@ class Solution {
                 
                 <div class="footer-nav">
                     <a href="#about" class="footer-nav-link">About</a>
-                    <a href="#services" class="footer-nav-link">Services</a>
                     <a href="#projects" class="footer-nav-link">Projects</a>
                     <a href="#awards" class="footer-nav-link">Awards</a>
                     <a href="#certifications" class="footer-nav-link">Certifications</a>
+                    <a href="#media" class="footer-nav-link">Media</a>
+                    <a href="#services" class="footer-nav-link">Services</a>
                     <a href="#contact" class="footer-nav-link">Contact</a>
                 </div>
             </div>
