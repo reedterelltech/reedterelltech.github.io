@@ -4,29 +4,29 @@
     <title>Terell Reed • Cybersecurity &amp; Developer &amp; Creative</title>
     <meta name="google-site-verification" content="oXdPwHoBmYbQHOvmCM9EVcBvHIRru2cv9CjTvhgT91s">
 
-    <meta name="description" content="The official site of Terell Reed — cybersecurity professional/ AI researcher, and Morgan State University graduate.">
+    <meta name="description" content="The official site of Terell Reed — cybersecurity/ AI researcher, and Morgan State University graduate.">
     <link rel="icon" type="image/png" href="android-chrome-512x512.png">
 
 
-<script type="application/ld+json">
-{
-  "@context": "https://schema.org",
-  "@type": "Person",
-  "name": "Terell Reed",
-  "jobTitle": "American Computer Scientist",
-  "url": "https://reedterelltech.github.io",
-  "sameAs": [
-    "https://www.linkedin.com/in/terell-reed-140377263",
-    "https://github.com/Terellreed1"
-  ],
-  "alumniOf": {
-    "@type": "CollegeOrUniversity",
-    "name": "Morgan State University"
-  },
-  "description": "Terell Reed is a cybersecurity professional, AI researcher, and proud Morgan State University graduate focused on building accessible, impactful tech."
-}
-</script>
-
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "Person",
+      "name": "Terell Reed",
+      "url": "https://reedterelltech.github.io",
+      "sameAs": [
+        "https://linkedin.com/in/terellreed",
+        "https://github.com/terellreed",
+        "https://medium.com/@reedterelltech"
+      ],
+      "jobTitle": "Cybersecurity & AI Researcher",
+      "alumniOf": {
+        "@type": "CollegeOrUniversity",
+        "name": "Morgan State University"
+      },
+      "description": "Terell Reed is a cybersecurity intern, AI researcher, and proud Morgan State University graduate focused on building accessible, impactful tech."
+    }
+    </script>
     
     <!-- Font imports -->
     <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@300;400;500;600;700&amp;family=Inter:wght@300;400;500;700;900&amp;family=Syne:wght@400;500;600;700;800&amp;family=JetBrains+Mono:wght@300;400;500;600;700&amp;family=Poppins:wght@300;400;500;600;700;800&amp;display=swap" rel="stylesheet">
@@ -45,7 +45,7 @@
     <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js" defer=""></script>
     
     <!-- Tailwind CSS for utility classes -->
-    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script><style>/*! tailwindcss v4.1.10 | MIT License | https://tailwindcss.com */
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script><style>/*! tailwindcss v4.1.11 | MIT License | https://tailwindcss.com */
 @layer theme, base, components, utilities;
 @layer theme {
   :root, :host {
@@ -2050,14 +2050,17 @@
         .footer {
             background: rgba(5, 10, 28, 0.7);
             backdrop-filter: blur(10px);
-            padding: 3rem 0;
+            padding: 1.5rem 0;
             margin-top: var(--section-gap);
         }
 
         .footer-container {
             display: flex;
-            justify-content: space-between;
+            justify-content: center;
             align-items: center;
+            text-align: center;
+            color: var(--text-dim);
+            font-size: 0.9rem;
         }
 
         .footer-left {
@@ -2103,6 +2106,122 @@
             justify-content: space-between;
             color: var(--text-dimmer);
             font-size: 0.9rem;
+        }
+
+        /* GitHub Projects Section */
+        .github-projects {
+            background: rgba(10, 15, 35, 0.5);
+        }
+
+        .github-repos-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+            gap: 2rem;
+            margin-top: 2rem;
+        }
+
+        .github-repo-card {
+            background: var(--card-bg);
+            border-radius: 12px;
+            padding: 1.5rem;
+            border: 1px solid var(--card-border);
+            transition: all var(--transition-smooth);
+            position: relative;
+            overflow: hidden;
+        }
+
+        .github-repo-card:hover {
+            transform: translateY(-2px);
+            box-shadow: var(--shadow-2);
+            border-color: var(--accent-1);
+        }
+
+        .repo-header {
+            display: flex;
+            justify-content: space-between;
+            align-items: flex-start;
+            margin-bottom: 1rem;
+        }
+
+        .repo-name {
+            font-size: 1.1rem;
+            font-weight: 600;
+            color: var(--text-light);
+            margin: 0;
+        }
+
+        .repo-language {
+            background: var(--accent-1);
+            color: white;
+            padding: 0.25rem 0.5rem;
+            border-radius: 12px;
+            font-size: 0.75rem;
+            font-weight: 500;
+        }
+
+        .repo-description {
+            color: var(--text-dim);
+            margin-bottom: 1rem;
+            line-height: 1.5;
+        }
+
+        .repo-stats {
+            display: flex;
+            gap: 1rem;
+            margin-bottom: 1rem;
+            font-size: 0.85rem;
+            color: var(--text-dim);
+        }
+
+        .repo-stat {
+            display: flex;
+            align-items: center;
+            gap: 0.25rem;
+        }
+
+        .repo-code-snippet {
+            background: rgba(0, 0, 0, 0.3);
+            border-radius: 6px;
+            padding: 1rem;
+            margin-top: 1rem;
+            font-family: 'Courier New', monospace;
+            font-size: 0.8rem;
+            color: var(--text-light);
+            border-left: 3px solid var(--accent-1);
+            overflow-x: auto;
+        }
+
+        .repo-actions {
+            display: flex;
+            gap: 0.5rem;
+            margin-top: 1rem;
+        }
+
+        .repo-link {
+            display: inline-flex;
+            align-items: center;
+            gap: 0.25rem;
+            color: var(--accent-1);
+            text-decoration: none;
+            font-size: 0.85rem;
+            transition: color var(--transition-fast);
+        }
+
+        .repo-link:hover {
+            color: var(--accent-2);
+        }
+
+        .loading-repos {
+            grid-column: 1 / -1;
+            text-align: center;
+            padding: 3rem;
+            color: var(--text-dim);
+        }
+
+        .loading-repos i {
+            font-size: 2rem;
+            margin-bottom: 1rem;
+            color: var(--accent-1);
         }
 
         /* Responsive Styles */
@@ -2293,7 +2412,7 @@
             transform: translateY(0);
         }
     </style>
-  <script src="https://lib.youware.com/youware-lib.1747145198.js" id="yourware-lib"></script></head>
+  <script src="https://lib.youware.com/youware-lib.1747145198.js" id="yourware-lib"></script><script id="simplify-jobs-page-script" src="chrome-extension://pbanhockgagggenencehbnadejlgchfc/js/pageScript.bundle.js"></script></head>
   <body style="">
     <div class="loading-screen hidden">
         <div class="loading-logo">TERELL REED</div>
@@ -2302,8 +2421,8 @@
         </div>
     </div>
     
-    <div class="cursor-dot" style="left: 228px; top: 3px;"></div>
-    <div class="cursor-ring" style="left: 228px; top: 3px; width: 40px; height: 40px;"></div>
+    <div class="cursor-dot" style="left: 329px; top: 8px;"></div>
+    <div class="cursor-ring" style="left: 329px; top: 8px;"></div>
     
     <!-- Background Elements -->
     <div class="bg-dots"></div>
@@ -2315,12 +2434,13 @@
     <div class="bg-glow bg-glow-3"></div>
     
     <!-- Navigation -->
-    <nav class="navbar scrolled">
+    <nav class="navbar">
         <div class="logo">TERELL REED</div>
         <ul class="nav-links">
             <li><a href="#about" class="nav-link">About</a></li>
             <li><a href="#services" class="nav-link">Services</a></li>
             <li><a href="#projects" class="nav-link">Projects</a></li>
+            <li><a href="#github-projects" class="nav-link">GitHub</a></li>
             <li><a href="#portfolio" class="nav-link">Portfolio</a></li>
             <li><a href="#certifications" class="nav-link">Certifications</a></li>
             <li><a href="#awards" class="nav-link">Awards</a></li>
@@ -2340,7 +2460,7 @@
         <div class="container">
             <div class="hero-content">
                 <h1 class="hero-title">
-                    I'm a <span class="highlight">Cybersecurity</span> Specialist &amp; <span class="typing-text">Developer</span>
+                    I'm a <span class="highlight">Cybersecurity</span> Specialist &amp; <span class="typing-text">Researcher</span>
                 </h1>
                 <p class="hero-subtitle">
                     Morgan State University graduate passionate about AI research, secure systems, and creating technology that makes an impact.
@@ -2650,28 +2770,9 @@ class AIResearch {
     <section class="section website-portfolio fade-in visible" id="portfolio">
         <div class="container">
             <h2 class="section-title">My Work</h2>
+            <p style="text-align: center; color: var(--text-dim); margin-bottom: 2rem;">More work coming soon...</p>
             
             <div class="portfolio-container">
-                <!-- LezTea Website -->
-                <div class="portfolio-card">
-                    <div class="portfolio-image-container">
-                        <img src="https://public.youware.com/users-website-assets/prod/90368a29-7f33-48fc-b5dd-58e887931a50/05890cf931d64691b51b555b104b7b69.png" alt="LezTea Website" class="portfolio-image">
-                    </div>
-                    <div class="portfolio-content">
-                        <span class="portfolio-tag">E-commerce</span>
-                        <h3 class="portfolio-title">LezTea</h3>
-                        <p class="portfolio-description">
-                            A handcrafted tea and lemonades business website showcasing premium products from Baltimore. Features a responsive design with an interactive menu and ordering system.
-                        </p>
-                        <div class="portfolio-footer">
-                            <a href="https://leztea.github.io/" target="_blank" class="portfolio-link">
-                                Visit Website <i class="fas fa-arrow-right"></i>
-                            </a>
-                            <span class="portfolio-tech">HTML / CSS / JS</span>
-                        </div>
-                    </div>
-                </div>
-                
                 <!-- Evolve Connection Website -->
                 <div class="portfolio-card">
                     <div class="portfolio-image-container">
@@ -2724,9 +2825,6 @@ class AIResearch {
                             A comprehensive consulting application designed to streamline business operations and client management. Features advanced analytics, project tracking, and client communication tools.
                         </p>
                         <div class="portfolio-footer">
-                            <a href="#" class="portfolio-link">
-                                View Project <i class="fas fa-arrow-right"></i>
-                            </a>
                             <span class="portfolio-tech">React Native / Node.js</span>
                         </div>
                     </div>
@@ -2740,7 +2838,7 @@ class AIResearch {
     </section>
     
     <!-- Projects Section -->
-    <section class="section fade-in" id="projects">
+    <section class="section fade-in visible" id="projects">
         <div class="container">
             <h2 class="section-title">Conferences &amp; Achievements</h2>
             <div class="projects-container">
@@ -2802,9 +2900,289 @@ class AIResearch {
             </div>
         </div>
     </section>
+
+    <!-- GitHub Projects Section -->
+    <section class="section github-projects fade-in visible" id="github-projects">
+        <div class="container">
+            <h2 class="section-title">GitHub Projects</h2>
+            <p class="section-subtitle">Open source projects and code repositories</p>
+            
+            <div id="github-repos-container" class="github-repos-grid">
+                        <div class="github-repo-card">
+                            <div class="repo-header">
+                                <h3 class="repo-name">Evolve.github.io</h3>
+                                <span class="repo-language">HTML</span>
+                            </div>
+                            <p class="repo-description">No description available</p>
+                            <div class="repo-stats">
+                                <div class="repo-stat">
+                                    <i class="fas fa-star"></i>
+                                    <span>0</span>
+                                </div>
+                                <div class="repo-stat">
+                                    <i class="fas fa-code-branch"></i>
+                                    <span>0</span>
+                                </div>
+                                <div class="repo-stat">
+                                    <i class="fas fa-calendar"></i>
+                                    <span>5/3/2025</span>
+                                </div>
+                            </div>
+                            <div class="repo-code-snippet"><pre><code># Evolve Connection Coaching - Website Documentation
+
+## Overview
+This documentation covers the implementation of the Evolve Connection Coaching website, a responsive platform for a life and relationship coaching business. The website showcases services, testimonials, workshop information, and enables clients to book sessions and contact the coach.
+
+**GitHub Repository:** [https://github.com/evolve-coaching/website](https://github.com/evolve-coaching/website)
+
+## Table of Contents
+1. [File Structure](#file-structure)
+2. [Technologies Used](#technologies-used)
+// ...</code></pre></div>
+                            <div class="repo-actions">
+                                <a href="https://github.com/Terellreed1/Evolve.github.io" target="_blank" class="repo-link">
+                                    <i class="fas fa-external-link-alt"></i>
+                                    View on GitHub
+                                </a>
+                                
+                            </div>
+                        </div>
+                    
+                        <div class="github-repo-card">
+                            <div class="repo-header">
+                                <h3 class="repo-name">BrainWave-Therapy</h3>
+                                <span class="repo-language">Python</span>
+                            </div>
+                            <p class="repo-description">No description available</p>
+                            <div class="repo-stats">
+                                <div class="repo-stat">
+                                    <i class="fas fa-star"></i>
+                                    <span>0</span>
+                                </div>
+                                <div class="repo-stat">
+                                    <i class="fas fa-code-branch"></i>
+                                    <span>0</span>
+                                </div>
+                                <div class="repo-stat">
+                                    <i class="fas fa-calendar"></i>
+                                    <span>4/27/2025</span>
+                                </div>
+                            </div>
+                            <div class="repo-code-snippet"><pre><code>import argparse
+import time
+import json
+import threading
+import numpy as np
+import subprocess
+import re
+from flask import Flask, jsonify, send_from_directory
+from flask_cors import CORS
+from brainflow.board_shim import BoardShim, BrainFlowInputParams, BoardIds, LogLevels
+// ...</code></pre></div>
+                            <div class="repo-actions">
+                                <a href="https://github.com/Terellreed1/BrainWave-Therapy" target="_blank" class="repo-link">
+                                    <i class="fas fa-external-link-alt"></i>
+                                    View on GitHub
+                                </a>
+                                
+                            </div>
+                        </div>
+                    
+                        <div class="github-repo-card">
+                            <div class="repo-header">
+                                <h3 class="repo-name">StressPredict</h3>
+                                <span class="repo-language">HTML</span>
+                            </div>
+                            <p class="repo-description">This project implements an advanced machine learning system that predicts stress levels based on physiological data. Using a deep neural network architecture, the system analyzes multiple physical parameters to classify an individual's stress into different levels, enabling early detection and intervention.</p>
+                            <div class="repo-stats">
+                                <div class="repo-stat">
+                                    <i class="fas fa-star"></i>
+                                    <span>0</span>
+                                </div>
+                                <div class="repo-stat">
+                                    <i class="fas fa-code-branch"></i>
+                                    <span>0</span>
+                                </div>
+                                <div class="repo-stat">
+                                    <i class="fas fa-calendar"></i>
+                                    <span>4/24/2025</span>
+                                </div>
+                            </div>
+                            <div class="repo-code-snippet"><pre><code># Stressen: Stress Prediction Using Deep Neural Networks
+
+## Abstract
+Stressen is a web-based stress prediction system that uses deep neural networks to analyze physiological parameters and predict user stress levels. The model classifies stress into five distinct levels ranging from low to high by examining metrics including snoring range, respiration rate, body temperature, limb movement, blood oxygen levels, eye movement, sleep duration, and heart rate. Our model achieves 92.7% accuracy, providing a reliable tool for non-invasive stress monitoring.
+
+## Authors
+- Terell
+- Tiffany
+- Olivia
+
+// ...</code></pre></div>
+                            <div class="repo-actions">
+                                <a href="https://github.com/Terellreed1/StressPredict" target="_blank" class="repo-link">
+                                    <i class="fas fa-external-link-alt"></i>
+                                    View on GitHub
+                                </a>
+                                
+                            </div>
+                        </div>
+                    
+                        <div class="github-repo-card">
+                            <div class="repo-header">
+                                <h3 class="repo-name">SecOps-</h3>
+                                <span class="repo-language">Python</span>
+                            </div>
+                            <p class="repo-description">Advanced security analysis tool for threat detection, leveraging machine learning and MITRE ATT&amp;CK framework methodologies. Designed to enhance security capabilities through intelligent log parsing, anomaly detection, and comprehensive threat intelligence reporting.</p>
+                            <div class="repo-stats">
+                                <div class="repo-stat">
+                                    <i class="fas fa-star"></i>
+                                    <span>0</span>
+                                </div>
+                                <div class="repo-stat">
+                                    <i class="fas fa-code-branch"></i>
+                                    <span>0</span>
+                                </div>
+                                <div class="repo-stat">
+                                    <i class="fas fa-calendar"></i>
+                                    <span>3/26/2025</span>
+                                </div>
+                            </div>
+                            <div class="repo-code-snippet"><pre><code> Cybersecurity Operations Framework
+Overview
+SecOps is an advanced security operations platform designed to streamline and enhance cybersecurity monitoring, threat detection, and incident response through intelligent automation and comprehensive analytics. Key Features
+
+Real-time threat monitoring
+Advanced incident detection and response
+Automated security workflow management
+Comprehensive log analysis
+Machine learning-powered threat intelligence
+Cross-platform security integration
+// ...</code></pre></div>
+                            <div class="repo-actions">
+                                <a href="https://github.com/Terellreed1/SecOps-" target="_blank" class="repo-link">
+                                    <i class="fas fa-external-link-alt"></i>
+                                    View on GitHub
+                                </a>
+                                
+                            </div>
+                        </div>
+                    
+                        <div class="github-repo-card">
+                            <div class="repo-header">
+                                <h3 class="repo-name">DHPort</h3>
+                                <span class="repo-language">HTML</span>
+                            </div>
+                            <p class="repo-description">No description available</p>
+                            <div class="repo-stats">
+                                <div class="repo-stat">
+                                    <i class="fas fa-star"></i>
+                                    <span>0</span>
+                                </div>
+                                <div class="repo-stat">
+                                    <i class="fas fa-code-branch"></i>
+                                    <span>0</span>
+                                </div>
+                                <div class="repo-stat">
+                                    <i class="fas fa-calendar"></i>
+                                    <span>3/7/2025</span>
+                                </div>
+                            </div>
+                            
+                            <div class="repo-actions">
+                                <a href="https://github.com/Terellreed1/DHPort" target="_blank" class="repo-link">
+                                    <i class="fas fa-external-link-alt"></i>
+                                    View on GitHub
+                                </a>
+                                
+                            </div>
+                        </div>
+                    
+                        <div class="github-repo-card">
+                            <div class="repo-header">
+                                <h3 class="repo-name">SecureReality</h3>
+                                <span class="repo-language">Python</span>
+                            </div>
+                            <p class="repo-description">A security management platform designed to protect and secure augmented reality applications through intelligent machine learning, comprehensive vulnerability assessment, and real-time anomaly detection.</p>
+                            <div class="repo-stats">
+                                <div class="repo-stat">
+                                    <i class="fas fa-star"></i>
+                                    <span>0</span>
+                                </div>
+                                <div class="repo-stat">
+                                    <i class="fas fa-code-branch"></i>
+                                    <span>0</span>
+                                </div>
+                                <div class="repo-stat">
+                                    <i class="fas fa-calendar"></i>
+                                    <span>3/5/2025</span>
+                                </div>
+                            </div>
+                            <div class="repo-code-snippet"><pre><code>import numpy as np
+import pandas as pd
+from typing import Dict, List, Any
+import logging
+from sklearn.ensemble import IsolationForest
+from dataclasses import dataclass, field
+from datetime import datetime
+import uuid
+import json
+
+// ...</code></pre></div>
+                            <div class="repo-actions">
+                                <a href="https://github.com/Terellreed1/SecureReality" target="_blank" class="repo-link">
+                                    <i class="fas fa-external-link-alt"></i>
+                                    View on GitHub
+                                </a>
+                                
+                            </div>
+                        </div>
+                    
+                        <div class="github-repo-card">
+                            <div class="repo-header">
+                                <h3 class="repo-name">TherapyCompanionNAO</h3>
+                                <span class="repo-language">TypeScript</span>
+                            </div>
+                            <p class="repo-description">No description available</p>
+                            <div class="repo-stats">
+                                <div class="repo-stat">
+                                    <i class="fas fa-star"></i>
+                                    <span>0</span>
+                                </div>
+                                <div class="repo-stat">
+                                    <i class="fas fa-code-branch"></i>
+                                    <span>0</span>
+                                </div>
+                                <div class="repo-stat">
+                                    <i class="fas fa-calendar"></i>
+                                    <span>3/3/2025</span>
+                                </div>
+                            </div>
+                            <div class="repo-code-snippet"><pre><code>
+
+```python
+from dotenv import load_dotenv
+from typing import Any
+from pydantic import (
+    AnyHttpUrl,
+    field_validator
+)
+from pydantic_settings import BaseSettings
+// ...</code></pre></div>
+                            <div class="repo-actions">
+                                <a href="https://github.com/Terellreed1/TherapyCompanionNAO" target="_blank" class="repo-link">
+                                    <i class="fas fa-external-link-alt"></i>
+                                    View on GitHub
+                                </a>
+                                
+                            </div>
+                        </div>
+                    </div>
+        </div>
+    </section>
     
     <!-- Awards Section -->
-    <section class="section fade-in" id="awards">
+    <section class="section fade-in visible" id="awards">
         <div class="container">
             <h2 class="section-title">Awards &amp; Recognition</h2>
             <div class="awards-container">
@@ -2916,7 +3294,7 @@ class AIResearch {
     </section>
     
     <!-- Featured Article Section -->
-    <section class="section fade-in" id="featured">
+    <section class="section fade-in visible" id="featured">
         <div class="container">
             <h2 class="section-title">Media Coverage</h2>
             
@@ -2960,7 +3338,7 @@ class AIResearch {
     </section>
     
     <!-- Professional Certifications Section -->
-    <section class="section fade-in" id="certifications">
+    <section class="section fade-in visible" id="certifications">
         <div class="container">
             <h2 class="section-title">Professional Certifications</h2>
             <div class="certs-container">
@@ -3025,7 +3403,7 @@ class AIResearch {
     </section>
     
     <!-- Resume Section -->
-    <section class="section fade-in" id="resume">
+    <section class="section fade-in visible" id="resume">
         <div class="container">
             <h2 class="section-title">Resume &amp; Experience</h2>
             <div class="resume-container">
@@ -3035,7 +3413,7 @@ class AIResearch {
                     View my complete resume to learn more about my education, professional experience, certifications, and skills in cybersecurity, AI research, and software development.
                 </p>
                 <div class="resume-buttons">
-                    <a href="https://drive.google.com/file/d/1xvFLe6itaivO2iDLXF8pb7xFu0WfdQxH/view?usp=sharing" class="resume-btn resume-btn-primary">
+                    <a href="https://drive.google.com/file/d/1xvFLe6itaivO2iDLXF8pb7xFu0WfdQxH/view?usp=sharing" target="_blank" class="resume-btn resume-btn-primary">
                         <i class="fas fa-download"></i> Download Resume
                     </a>
                     <a href="#contact" class="resume-btn resume-btn-secondary">
@@ -3047,7 +3425,7 @@ class AIResearch {
     </section>
     
     <!-- Contact Section -->
-    <section class="section fade-in" id="contact">
+    <section class="section fade-in visible" id="contact">
         <div class="container">
             <h2 class="section-title">Get In Touch</h2>
             <div class="contact-container">
@@ -3095,28 +3473,7 @@ class AIResearch {
     <footer class="footer">
         <div class="container">
             <div class="footer-container">
-                <div class="footer-left">
-                    <div class="footer-logo">TERELL REED</div>
-                    <p class="footer-tagline">
-                        Cybersecurity Specialist &amp; Developer focused on building secure, impactful technology.
-                    </p>
-                </div>
-                
-                <div class="footer-nav">
-                    <a href="#about" class="footer-nav-link">About</a>
-                    <a href="#services" class="footer-nav-link">Services</a>
-                    <a href="#projects" class="footer-nav-link">Projects</a>
-                    <a href="#portfolio" class="footer-nav-link">Portfolio</a>
-                    <a href="#certifications" class="footer-nav-link">Certifications</a>
-                    <a href="#awards" class="footer-nav-link">Awards</a>
-                    <a href="#resume" class="footer-nav-link">Resume</a>
-                    <a href="#contact" class="footer-nav-link">Contact</a>
-                </div>
-            </div>
-            
-            <div class="footer-bottom">
-                <div>© 2023 Terell Reed. All Rights Reserved.</div>
-                <div>Designed &amp; Built by Terell Reed</div>
+                <div>© 2025 Terell Reed. All Rights Reserved.</div>
             </div>
         </div>
     </footer>
@@ -3174,6 +3531,97 @@ class AIResearch {
             });
         });
         
+        // GitHub Projects Integration
+        async function loadGitHubRepos() {
+            try {
+                const response = await fetch('https://api.github.com/users/Terellreed1/repos?sort=updated&per_page=9');
+                const repos = await response.json();
+                
+                const container = document.getElementById('github-repos-container');
+                container.innerHTML = '';
+                
+                // Filter out specific repositories
+                const excludedRepos = ['stress-predict', 'dh-port', 'terellreed1', 'streamlitdemo1', 'Stress-predict', 'DH-port', 'Terellreed1', 'StreamlitDemo1'];
+                
+                for (const repo of repos) {
+                    if (repo.private) continue; // Skip private repos
+                    if (excludedRepos.includes(repo.name)) continue; // Skip excluded repos
+                    
+                    // Fetch code snippet from main files
+                    let codeSnippet = '';
+                    try {
+                        const contentsResponse = await fetch(`https://api.github.com/repos/${repo.full_name}/contents`);
+                        const contents = await contentsResponse.json();
+                        
+                        // Look for main files to show code snippet
+                        const mainFile = contents.find(file => 
+                            file.name.match(/\.(js|py|java|cpp|html|css|md)$/i) && 
+                            !file.name.includes('test') && 
+                            !file.name.includes('spec')
+                        );
+                        
+                        if (mainFile && mainFile.download_url) {
+                            const fileResponse = await fetch(mainFile.download_url);
+                            const fileContent = await fileResponse.text();
+                            codeSnippet = fileContent.split('\n').slice(0, 10).join('\n');
+                            if (fileContent.split('\n').length > 10) {
+                                codeSnippet += '\n// ...';
+                            }
+                        }
+                    } catch (e) {
+                        codeSnippet = 'Code preview not available';
+                    }
+                    
+                    const repoCard = `
+                        <div class="github-repo-card">
+                            <div class="repo-header">
+                                <h3 class="repo-name">${repo.name}</h3>
+                                ${repo.language ? `<span class="repo-language">${repo.language}</span>` : ''}
+                            </div>
+                            <p class="repo-description">${repo.description || 'No description available'}</p>
+                            <div class="repo-stats">
+                                <div class="repo-stat">
+                                    <i class="fas fa-star"></i>
+                                    <span>${repo.stargazers_count}</span>
+                                </div>
+                                <div class="repo-stat">
+                                    <i class="fas fa-code-branch"></i>
+                                    <span>${repo.forks_count}</span>
+                                </div>
+                                <div class="repo-stat">
+                                    <i class="fas fa-calendar"></i>
+                                    <span>${new Date(repo.updated_at).toLocaleDateString()}</span>
+                                </div>
+                            </div>
+                            ${codeSnippet ? `<div class="repo-code-snippet"><pre><code>${codeSnippet}</code></pre></div>` : ''}
+                            <div class="repo-actions">
+                                <a href="${repo.html_url}" target="_blank" class="repo-link">
+                                    <i class="fas fa-external-link-alt"></i>
+                                    View on GitHub
+                                </a>
+                                ${repo.homepage ? `<a href="${repo.homepage}" target="_blank" class="repo-link">
+                                    <i class="fas fa-globe"></i>
+                                    Live Demo
+                                </a>` : ''}
+                            </div>
+                        </div>
+                    `;
+                    
+                    container.innerHTML += repoCard;
+                }
+            } catch (error) {
+                console.error('Error loading GitHub repos:', error);
+                document.getElementById('github-repos-container').innerHTML = `
+                    <div class="loading-repos">
+                        <p>Unable to load repositories at this time.</p>
+                    </div>
+                `;
+            }
+        }
+        
+        // Load GitHub repos when page loads
+        document.addEventListener('DOMContentLoaded', loadGitHubRepos);
+
         // Custom Cursor
         const cursorDot = document.querySelector('.cursor-dot');
         const cursorRing = document.querySelector('.cursor-ring');
