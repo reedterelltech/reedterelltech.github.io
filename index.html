@@ -1968,6 +1968,58 @@
             box-shadow: 0 0 15px rgba(29, 161, 242, 0.5);
         }
 
+        /* LinkedIn and Instagram hover effects */
+        .social-link:has(.fa-linkedin-in):hover {
+            background-color: #0077B5 !important;
+            box-shadow: 0 0 20px rgba(0, 119, 181, 0.6) !important;
+            transform: translateY(-5px) scale(1.1);
+        }
+
+        .social-link:has(.fa-instagram):hover {
+            background: linear-gradient(45deg, #f09433, #e6683c, #dc2743, #cc2366, #bc1888) !important;
+            box-shadow: 0 0 20px rgba(225, 48, 108, 0.6) !important;
+            transform: translateY(-5px) scale(1.1);
+        }
+
+        /* Navbar Social Links */
+        .navbar-social {
+            display: flex;
+            gap: 0.5rem;
+            margin-left: 1rem;
+        }
+
+        .navbar-social-link {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            width: 40px;
+            height: 40px;
+            background: rgba(255, 255, 255, 0.1);
+            border: 1px solid rgba(255, 255, 255, 0.2);
+            border-radius: 8px;
+            color: var(--text-light);
+            text-decoration: none;
+            transition: all 0.3s ease;
+            font-size: 1.2rem;
+        }
+
+        .navbar-social-link:hover {
+            transform: translateY(-3px) scale(1.1);
+            color: #fff;
+        }
+
+        .navbar-social-link:has(.fa-linkedin-in):hover {
+            background-color: #0077B5;
+            border-color: #0077B5;
+            box-shadow: 0 8px 25px rgba(0, 119, 181, 0.4);
+        }
+
+        .navbar-social-link:has(.fa-instagram):hover {
+            background: linear-gradient(45deg, #f09433, #e6683c, #dc2743, #cc2366, #bc1888);
+            border-color: #e6683c;
+            box-shadow: 0 8px 25px rgba(225, 48, 108, 0.4);
+        }
+
         .form-group {
             margin-bottom: 1.5rem;
         }
@@ -2319,6 +2371,10 @@
                 display: block;
             }
             
+            .navbar-social {
+                display: none;
+            }
+            
             .nav-links {
                 position: fixed;
                 top: 0;
@@ -2422,8 +2478,8 @@
         </div>
     </div>
     
-    <div class="cursor-dot" style="left: 641px; top: 357px;"></div>
-    <div class="cursor-ring" style="left: 641px; top: 357px;"></div>
+    <div class="cursor-dot" style="left: 537px; top: 485px;"></div>
+    <div class="cursor-ring" style="left: 537px; top: 485px; width: 40px; height: 40px;"></div>
     
     <!-- Background Elements -->
     <div class="bg-dots"></div>
@@ -2435,7 +2491,7 @@
     <div class="bg-glow bg-glow-3"></div>
     
     <!-- Navigation -->
-    <nav class="navbar scrolled">
+    <nav class="navbar">
         <div class="logo">TERELL REED</div>
         <ul class="nav-links">
             <li><a href="#about" class="nav-link">About</a></li>
@@ -2448,6 +2504,17 @@
             <li><a href="#resume" class="nav-link">Resume</a></li>
             <li><a href="#contact" class="nav-link">Contact</a></li>
         </ul>
+        
+        <!-- Social Icons in Navbar -->
+        <div class="navbar-social">
+            <a href="https://linkedin.com/in/terellreed" target="_blank" class="navbar-social-link" title="LinkedIn">
+                <i class="fab fa-linkedin-in"></i>
+            </a>
+            <a href="https://instagram.com/terellreed" target="_blank" class="navbar-social-link" title="Instagram">
+                <i class="fab fa-instagram"></i>
+            </a>
+        </div>
+        
         <div class="menu-toggle">
             <span></span>
             <span></span>
@@ -2461,7 +2528,7 @@
         <div class="container">
             <div class="hero-content">
                 <h1 class="hero-title">
-                    I'm a <span class="highlight">Cybersecurity</span> Specialist &amp; <span class="typing-text">Researcher</span>
+                    I'm a <span class="highlight">Cybersecurity</span> Specialist &amp; <span class="typing-text">Developer</span>
                 </h1>
                 <p class="hero-subtitle">
                     Morgan State University graduate passionate about AI research, secure systems, and creating technology that makes an impact.
@@ -2774,7 +2841,7 @@ class AIResearch {
     </section>
     
     <!-- Portfolio Section -->
-    <section class="section website-portfolio fade-in visible" id="portfolio">
+    <section class="section website-portfolio fade-in" id="portfolio">
         <div class="container">
             <h2 class="section-title">My Work</h2>
             <p style="text-align: center; color: var(--text-dim); margin-bottom: 2rem;">More work coming soon...</p>
@@ -3508,7 +3575,17 @@ from pydantic_settings import BaseSettings
                         </div>
                     </div>
                     
-                    <!-- Social media section removed -->
+                    <div class="contact-social">
+                        <h4 style="color: var(--text-light); margin-bottom: 1rem; font-size: 1.1rem;">Connect With Me</h4>
+                        <div style="display: flex; gap: 1rem;">
+                            <a href="https://linkedin.com/in/terellreed" target="_blank" class="social-link" title="LinkedIn">
+                                <i class="fab fa-linkedin-in"></i>
+                            </a>
+                            <a href="https://instagram.com/terellreed" target="_blank" class="social-link" title="Instagram">
+                                <i class="fab fa-instagram"></i>
+                            </a>
+                        </div>
+                    </div>
                 </div>
                 
                 <!-- Contact form removed for minimalist design -->
