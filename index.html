@@ -1,11 +1,11 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <link rel="icon" type="image/svg+xml" href="/vite.svg" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>RDG • Reed Digital Group • Technology Excellence</title>
-    <meta name="description" content="Reed Digital Group (RDG) - Professional digital solutions, cybersecurity consulting, and AI integration for businesses.">
+    <meta name="description" content="Reed Digital Group (RDG) - Professional digital solutions, cybersecurity consulting, and AI integration for businesses led by CEO Terell Reed.">
+    <link rel="icon" type="image/png" href="https://i.ibb.co/DPF9tTzw/Chat-GPT-Image-Jul-17-2025-07-50-56-PM.png">
     
     <!-- Schema.org Markup -->
     <script type="application/ld+json">
@@ -15,17 +15,509 @@
       "name": "Reed Digital Group",
       "alternateName": "RDG",
       "url": "https://reeddigitalgroup.com",
+      "logo": "https://i.ibb.co/DPF9tTzw/Chat-GPT-Image-Jul-17-2025-07-50-56-PM.png",
       "founder": {
         "@type": "Person",
-        "name": "Terell Reed"
+        "name": "Terell Reed",
+        "image": "https://public.youware.com/users-website-assets/prod/b9199f10-d7d6-4936-bbb4-197c58fbe1d7/41d77d77759945f59b941e99181d3b5f.jpg"
       },
       "foundingDate": "2024",
       "description": "Reed Digital Group (RDG) is a professional technology consulting firm specializing in cybersecurity, digital solutions, and AI integration for businesses."
     }
     </script>
-  </head>
-  <body>
+</head>
+<body>
+    <!-- Loading Screen -->
+    <div class="loading-screen" id="loadingScreen">
+        <div class="loading-content">
+            <img src="https://i.ibb.co/DPF9tTzw/Chat-GPT-Image-Jul-17-2025-07-50-56-PM.png" alt="RDG Logo" class="loading-logo">
+            <div class="loading-text">Reed Digital Group</div>
+            <div class="loading-bar">
+                <div class="loading-progress"></div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Page Transition Overlay -->
+    <div class="page-transition" id="pageTransition"></div>
+
+    <!-- Navigation -->
+    <nav class="navbar" id="navbar">
+        <div class="nav-container">
+            <div class="nav-brand">
+                <img src="https://i.ibb.co/DPF9tTzw/Chat-GPT-Image-Jul-17-2025-07-50-56-PM.png" alt="RDG Logo" class="nav-logo">
+                <span class="nav-brand-text">RDG</span>
+            </div>
+            <ul class="nav-links" id="navLinks">
+                <li><a href="#home" class="nav-link active" data-page="home">Home</a></li>
+                <li><a href="#about" class="nav-link" data-page="about">About</a></li>
+                <li><a href="#portfolio" class="nav-link" data-page="portfolio">Portfolio</a></li>
+                <li><a href="#achievements" class="nav-link" data-page="achievements">Achievements</a></li>
+                <li><a href="#certifications" class="nav-link" data-page="certifications">Certifications</a></li>
+                <li><a href="#resume" class="nav-link" data-page="resume">Resume</a></li>
+                <li><a href="#contact" class="nav-link" data-page="contact">Contact</a></li>
+            </ul>
+            <button class="menu-toggle" id="menuToggle">
+                <span></span>
+                <span></span>
+                <span></span>
+            </button>
+        </div>
+    </nav>
+
+    <!-- Main Content Container -->
+    <main class="main-content" id="mainContent">
+        <!-- Home Page -->
+        <div class="page active" id="home">
+            <!-- Hero Section -->
+            <section class="hero">
+                <div class="hero-background">
+                    <div class="hero-particles" id="heroParticles"></div>
+                </div>
+                <div class="container">
+                    <div class="hero-content">
+                        <div class="hero-text">
+                            <p class="hero-subtitle animate-fade-up">Founded in 2024</p>
+                            <h1 class="hero-title animate-fade-up">Reed Digital Group</h1>
+                            <p class="hero-description animate-fade-up">
+                                Professional technology consulting specializing in cybersecurity,
+                                digital solutions, and AI integration for forward-thinking businesses.
+                            </p>
+                            <div class="hero-actions animate-fade-up">
+                                <button class="btn primary" data-page="portfolio">
+                                    <span>View Portfolio</span>
+                                    <div class="btn-ripple"></div>
+                                </button>
+                                <button class="btn secondary" data-page="contact">
+                                    <span>Get in Touch</span>
+                                    <div class="btn-ripple"></div>
+                                </button>
+                            </div>
+                        </div>
+                        <div class="hero-image animate-fade-left">
+                            <div class="hero-image-container">
+                                <img src="https://public.youware.com/users-website-assets/prod/b9199f10-d7d6-4936-bbb4-197c58fbe1d7/41d77d77759945f59b941e99181d3b5f.jpg" alt="Terell Reed, CEO" class="hero-img">
+                                <div class="hero-image-overlay"></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <!-- Featured Media -->
+            <section class="featured-media">
+                <div class="container">
+                    <div class="media-grid">
+                        <div class="media-item animate-on-scroll">
+                            <div class="media-icon">📰</div>
+                            <h3>Baltimore Times</h3>
+                            <p>Featured Technology Innovation</p>
+                        </div>
+                        <div class="media-item animate-on-scroll">
+                            <div class="media-icon">✍️</div>
+                            <h3>Medium</h3>
+                            <p>Tech Industry Insights</p>
+                        </div>
+                        <div class="media-item animate-on-scroll">
+                            <div class="media-icon">🛡️</div>
+                            <h3>MITRE Insights</h3>
+                            <p>Cybersecurity Research</p>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <!-- Services Section -->
+            <section class="services">
+                <div class="container">
+                    <h2 class="section-title animate-on-scroll">Our Services</h2>
+                    <div class="services-grid">
+                        <div class="service-card animate-on-scroll">
+                            <div class="service-icon">🔒</div>
+                            <h3>Cybersecurity</h3>
+                            <p>Comprehensive security assessments, penetration testing, and infrastructure hardening to protect your business from evolving cyber threats.</p>
+                            <div class="service-overlay"></div>
+                        </div>
+                        <div class="service-card animate-on-scroll">
+                            <div class="service-icon">💻</div>
+                            <h3>Software Development</h3>
+                            <p>Custom web and mobile applications built with cutting-edge technologies and best practices for security and scalability.</p>
+                            <div class="service-overlay"></div>
+                        </div>
+                        <div class="service-card animate-on-scroll">
+                            <div class="service-icon">🤖</div>
+                            <h3>AI Integration</h3>
+                            <p>Machine learning and artificial intelligence solutions to automate processes, generate insights, and create competitive advantage.</p>
+                            <div class="service-overlay"></div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <!-- CTA Section -->
+            <section class="cta">
+                <div class="container">
+                    <div class="cta-content animate-on-scroll">
+                        <h2>Ready to Transform Your Business?</h2>
+                        <p>Let's discuss how RDG can help you achieve your technology goals.</p>
+                        <button class="btn primary" data-page="contact">
+                            <span>Get Started</span>
+                            <div class="btn-ripple"></div>
+                        </button>
+                    </div>
+                </div>
+            </section>
+        </div>
+
+        <!-- About Page -->
+        <div class="page" id="about">
+            <section class="page-hero">
+                <div class="container">
+                    <h1 class="page-title animate-fade-up">About Terell Reed</h1>
+                    <p class="page-subtitle animate-fade-up">Visionary leader in technology and cybersecurity</p>
+                </div>
+            </section>
+            
+            <section class="about-content">
+                <div class="container">
+                    <div class="about-grid">
+                        <div class="about-text animate-on-scroll">
+                            <h2>Leading Innovation in Digital Security</h2>
+                            <p>Terell Reed is the founder and CEO of Reed Digital Group, a cutting-edge technology consulting firm established in 2024. With a passion for cybersecurity and digital innovation, Terell has dedicated his career to helping businesses navigate the complex landscape of modern technology.</p>
+                            <p>His expertise spans across multiple domains including cybersecurity, software development, and artificial intelligence integration. Terell's vision is to empower organizations with robust digital solutions that not only protect but also propel their business forward.</p>
+                            <div class="stats-grid">
+                                <div class="stat-item">
+                                    <div class="stat-number">50+</div>
+                                    <div class="stat-label">Projects Completed</div>
+                                </div>
+                                <div class="stat-item">
+                                    <div class="stat-number">25+</div>
+                                    <div class="stat-label">Clients Served</div>
+                                </div>
+                                <div class="stat-item">
+                                    <div class="stat-number">5+</div>
+                                    <div class="stat-label">Years Experience</div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="about-image animate-on-scroll">
+                            <img src="https://public.youware.com/users-website-assets/prod/b9199f10-d7d6-4936-bbb4-197c58fbe1d7/41d77d77759945f59b941e99181d3b5f.jpg" alt="Terell Reed">
+                        </div>
+                    </div>
+                </div>
+            </section>
+        </div>
+
+        <!-- Portfolio Page -->
+        <div class="page" id="portfolio">
+            <section class="page-hero">
+                <div class="container">
+                    <h1 class="page-title animate-fade-up">Portfolio</h1>
+                    <p class="page-subtitle animate-fade-up">Showcasing our innovative solutions and successful projects</p>
+                </div>
+            </section>
+            
+            <section class="portfolio-content">
+                <div class="container">
+                    <div class="portfolio-grid">
+                        <div class="portfolio-item animate-on-scroll">
+                            <div class="portfolio-image">
+                                <img src="https://images.pexels.com/photos/60504/security-protection-anti-virus-software-60504.jpeg" alt="Cybersecurity Project">
+                                <div class="portfolio-overlay">
+                                    <h3>Enterprise Security Audit</h3>
+                                    <p>Comprehensive security assessment for Fortune 500 company</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="portfolio-item animate-on-scroll">
+                            <div class="portfolio-image">
+                                <img src="https://images.pexels.com/photos/574071/pexels-photo-574071.jpeg" alt="Web Development">
+                                <div class="portfolio-overlay">
+                                    <h3>Custom Web Application</h3>
+                                    <p>Full-stack development with modern technologies</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="portfolio-item animate-on-scroll">
+                            <div class="portfolio-image">
+                                <img src="https://images.pexels.com/photos/8386440/pexels-photo-8386440.jpeg" alt="AI Integration">
+                                <div class="portfolio-overlay">
+                                    <h3>AI-Powered Analytics</h3>
+                                    <p>Machine learning solution for business intelligence</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="portfolio-item animate-on-scroll">
+                            <div class="portfolio-image">
+                                <img src="https://images.pexels.com/photos/5380664/pexels-photo-5380664.jpeg" alt="Mobile App">
+                                <div class="portfolio-overlay">
+                                    <h3>Mobile Security App</h3>
+                                    <p>Cross-platform mobile application for security monitoring</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="portfolio-item animate-on-scroll">
+                            <div class="portfolio-image">
+                                <img src="https://images.pexels.com/photos/3861969/pexels-photo-3861969.jpeg" alt="Cloud Infrastructure">
+                                <div class="portfolio-overlay">
+                                    <h3>Cloud Infrastructure</h3>
+                                    <p>Scalable cloud architecture for enterprise clients</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="portfolio-item animate-on-scroll">
+                            <div class="portfolio-image">
+                                <img src="https://images.pexels.com/photos/1181244/pexels-photo-1181244.jpeg" alt="Data Analytics">
+                                <div class="portfolio-overlay">
+                                    <h3>Data Analytics Platform</h3>
+                                    <p>Real-time analytics dashboard for business insights</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+        </div>
+
+        <!-- Achievements Page -->
+        <div class="page" id="achievements">
+            <section class="page-hero">
+                <div class="container">
+                    <h1 class="page-title animate-fade-up">Achievements</h1>
+                    <p class="page-subtitle animate-fade-up">Recognition and milestones in technology excellence</p>
+                </div>
+            </section>
+            
+            <section class="achievements-content">
+                <div class="container">
+                    <div class="timeline">
+                        <div class="timeline-item animate-on-scroll">
+                            <div class="timeline-date">2024</div>
+                            <div class="timeline-content">
+                                <h3>Founded Reed Digital Group</h3>
+                                <p>Established RDG as a premier technology consulting firm</p>
+                            </div>
+                        </div>
+                        <div class="timeline-item animate-on-scroll">
+                            <div class="timeline-date">2024</div>
+                            <div class="timeline-content">
+                                <h3>Featured in Baltimore Times</h3>
+                                <p>Recognition for innovative technology solutions</p>
+                            </div>
+                        </div>
+                        <div class="timeline-item animate-on-scroll">
+                            <div class="timeline-date">2024</div>
+                            <div class="timeline-content">
+                                <h3>MITRE Research Contribution</h3>
+                                <p>Published insights on cybersecurity frameworks</p>
+                            </div>
+                        </div>
+                        <div class="timeline-item animate-on-scroll">
+                            <div class="timeline-date">2024</div>
+                            <div class="timeline-content">
+                                <h3>Medium Tech Writer</h3>
+                                <p>Regular contributor sharing industry insights</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+        </div>
+
+        <!-- Certifications Page -->
+        <div class="page" id="certifications">
+            <section class="page-hero">
+                <div class="container">
+                    <h1 class="page-title animate-fade-up">Certifications</h1>
+                    <p class="page-subtitle animate-fade-up">Professional credentials and continuous learning</p>
+                </div>
+            </section>
+            
+            <section class="certifications-content">
+                <div class="container">
+                    <div class="certifications-grid">
+                        <div class="cert-card animate-on-scroll">
+                            <div class="cert-icon">🛡️</div>
+                            <h3>Certified Ethical Hacker (CEH)</h3>
+                            <p>EC-Council certification in ethical hacking and penetration testing</p>
+                            <div class="cert-year">2023</div>
+                        </div>
+                        <div class="cert-card animate-on-scroll">
+                            <div class="cert-icon">🔐</div>
+                            <h3>CISSP</h3>
+                            <p>Certified Information Systems Security Professional</p>
+                            <div class="cert-year">2023</div>
+                        </div>
+                        <div class="cert-card animate-on-scroll">
+                            <div class="cert-icon">☁️</div>
+                            <h3>AWS Solutions Architect</h3>
+                            <p>Amazon Web Services cloud architecture certification</p>
+                            <div class="cert-year">2024</div>
+                        </div>
+                        <div class="cert-card animate-on-scroll">
+                            <div class="cert-icon">🤖</div>
+                            <h3>AI/ML Certification</h3>
+                            <p>Machine learning and Artificial Intelligence specialization</p>
+                            <div class="cert-year">2024</div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+        </div>
+
+        <!-- Resume Page -->
+        <div class="page" id="resume">
+            <section class="page-hero">
+                <div class="container">
+                    <h1 class="page-title animate-fade-up">Resume</h1>
+                    <p class="page-subtitle animate-fade-up">Professional experience and expertise</p>
+                </div>
+            </section>
+            
+            <section class="resume-content">
+                <div class="container">
+                    <div class="resume-grid">
+                        <div class="resume-section animate-on-scroll">
+                            <h2>Experience</h2>
+                            <div class="experience-item">
+                                <h3>CEO & Founder</h3>
+                                <h4>Reed Digital Group</h4>
+                                <span class="date">2024 - Present</span>
+                                <p>Leading a technology consulting firm specializing in cybersecurity, software development, and AI integration.</p>
+                            </div>
+                            <div class="experience-item">
+                                <h3>Senior Security Consultant</h3>
+                                <h4>Previous Company</h4>
+                                <span class="date">2020 - 2024</span>
+                                <p>Provided cybersecurity consulting services to enterprise clients, conducting security assessments and implementing protection strategies.</p>
+                            </div>
+                        </div>
+                        <div class="resume-section animate-on-scroll">
+                            <h2>Skills</h2>
+                            <div class="skills-list">
+                                <div class="skill-item">
+                                    <span>Cybersecurity</span>
+                                    <div class="skill-bar">
+                                        <div class="skill-progress" style="width: 95%"></div>
+                                    </div>
+                                </div>
+                                <div class="skill-item">
+                                    <span>Software Development</span>
+                                    <div class="skill-bar">
+                                        <div class="skill-progress" style="width: 90%"></div>
+                                    </div>
+                                </div>
+                                <div class="skill-item">
+                                    <span>AI/ML Integration</span>
+                                    <div class="skill-bar">
+                                        <div class="skill-progress" style="width: 85%"></div>
+                                    </div>
+                                </div>
+                                <div class="skill-item">
+                                    <span>Cloud Architecture</span>
+                                    <div class="skill-bar">
+                                        <div class="skill-progress" style="width: 88%"></div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+        </div>
+
+        <!-- Contact Page -->
+        <div class="page" id="contact">
+            <section class="page-hero">
+                <div class="container">
+                    <h1 class="page-title animate-fade-up">Contact</h1>
+                    <p class="page-subtitle animate-fade-up">Let's discuss your technology needs</p>
+                </div>
+            </section>
+            
+            <section class="contact-content">
+                <div class="container">
+                    <div class="contact-grid">
+                        <div class="contact-info animate-on-scroll">
+                            <h2>Get in Touch</h2>
+                            <p>Ready to transform your business with cutting-edge technology solutions? Let's start a conversation.</p>
+                            <div class="contact-item">
+                                <div class="contact-icon">📧</div>
+                                <div>
+                                    <h4>Email</h4>
+                                    <p>contact@reeddigitalgroup.com</p>
+                                </div>
+                            </div>
+                            <div class="contact-item">
+                                <div class="contact-icon">📱</div>
+                                <div>
+                                    <h4>Phone</h4>
+                                    <p>+1 (555) 123-4567</p>
+                                </div>
+                            </div>
+                            <div class="contact-item">
+                                <div class="contact-icon">📍</div>
+                                <div>
+                                    <h4>Location</h4>
+                                    <p>Baltimore, MD</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="contact-form animate-on-scroll">
+                            <form id="contactForm">
+                                <div class="form-group">
+                                    <input type="text" id="name" name="name" required>
+                                    <label for="name">Name</label>
+                                </div>
+                                <div class="form-group">
+                                    <input type="email" id="email" name="email" required>
+                                    <label for="email">Email</label>
+                                </div>
+                                <div class="form-group">
+                                    <input type="text" id="subject" name="subject" required>
+                                    <label for="subject">Subject</label>
+                                </div>
+                                <div class="form-group">
+                                    <textarea id="message" name="message" required></textarea>
+                                    <label for="message">Message</label>
+                                </div>
+                                <button type="submit" class="btn primary">
+                                    <span>Send Message</span>
+                                    <div class="btn-ripple"></div>
+                                </button>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+            </section>
+        </div>
+    </main>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-brand">
+                    <img src="https://i.ibb.co/DPF9tTzw/Chat-GPT-Image-Jul-17-2025-07-50-56-PM.png" alt="RDG Logo" class="footer-logo">
+                    <span>Reed Digital Group</span>
+                </div>
+                <p class="footer-description">
+                    Empowering businesses through innovative technology solutions and cybersecurity excellence.
+                </p>
+                <div class="social-links">
+                    <a href="#" class="social-link">LinkedIn</a>
+                    <a href="#" class="social-link">GitHub</a>
+                    <a href="#" class="social-link">Twitter</a>
+                    <a href="#" class="social-link">Email</a>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>© 2024 Reed Digital Group. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
     <div id="app"></div>
     <script type="module" src="/src/main.ts"></script>
-  </body>
+</body>
 </html>
